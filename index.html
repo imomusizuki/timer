@@ -1,0 +1,29 @@
+</html><!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイマーとストップウォッチ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>タイマーとストップウォッチ</h1>
+
+    <div id="timer">
+        <h2>タイマー</h2>
+        <input type="number" id="workTime" placeholder="作業時間 (分)" min="1">
+        <input type="number" id="breakTime" placeholder="休憩時間 (分)" min="1">
+        <button onclick="startTimer()">スタート</button>
+        <div id="timerDisplay">00:00</div>
+    </div>
+
+    <div id="stopwatch">
+        <h2>ストップウォッチ</h2>
+        <button onclick="startStopwatch()">スタート</button>
+        <button onclick="stopStopwatch()">ストップ</button>
+        <button onclick="resetStopwatch()">リセット</button>
+        <div id="stopwatchDisplay">00:00:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
